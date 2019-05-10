@@ -1,0 +1,34 @@
+.DS_Store
+
+## Xcode
+*.xcworkspace
+*.xcworkspacedata
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+xcuserdata/
+
+## Other
+*~
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
+/SwiftProgramming/SwiftProgramming.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/SwiftProgramming/SwiftProgramming.xcodeproj/project.xcworkspace/contents.xcworkspacedata
