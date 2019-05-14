@@ -26,6 +26,19 @@ class CoolViewCell: UIView
     var text: String? {
         didSet { sizeToFit() }
     }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        layer.borderWidth = 3
+        layer.borderColor = UIColor.white.cgColor
+        layer.cornerRadius = 8
+        layer.masksToBounds = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        // FIXME: Don't crash
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 // MARK: - Drawing and resizing
