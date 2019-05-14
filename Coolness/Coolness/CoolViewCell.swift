@@ -29,15 +29,56 @@ class CoolViewCell: UIView
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        layer.borderWidth = 3
-        layer.borderColor = UIColor.white.cgColor
-        layer.cornerRadius = 8
-        layer.masksToBounds = true
+        configureLayer()
+        configureGestureRecognizers()
     }
     
     required init?(coder aDecoder: NSCoder) {
         // FIXME: Don't crash
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configureGestureRecognizers() {
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(bounce))
+        recognizer.numberOfTapsRequired = 2
+        addGestureRecognizer(recognizer)
+    }
+    
+    private func configureLayer() {
+        layer.borderWidth = 3
+        layer.borderColor = UIColor.white.cgColor
+        layer.cornerRadius = 8
+        layer.masksToBounds = true
+    }
+}
+
+// MARK: - Animation
+
+extension CoolViewCell
+{
+    @objc private func bounce() {
+        print("In \(#function)")
+        // TODO: Pull out constant values
+        animateBounce(duration: 1, size: CGSize(width: 120, height: 240))
+    }
+    
+    private func configureBounce(size: CGSize) {
+        UIView.setAnimationRepeatCount(3.5)
+        UIView.setAnimationRepeatAutoreverses(true)
+        let translation = CGAffineTransform(translationX: size.width, y: size.height)
+        self.transform = translation.rotated(by: .pi / 2)
+    }
+    
+    fileprivate func animateFinalBounce(duration: TimeInterval) {
+        UIView.animate(withDuration: duration) {
+            self.transform = .identity
+        }
+    }
+    
+    private func animateBounce(duration: TimeInterval, size: CGSize) {
+        UIView.animate(withDuration: duration,
+                       animations: { self.configureBounce(size: size) },
+                       completion: { _ in self.animateFinalBounce(duration: duration) })
     }
 }
 
