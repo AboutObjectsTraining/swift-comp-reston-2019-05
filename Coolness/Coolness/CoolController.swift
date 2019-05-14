@@ -15,6 +15,9 @@ class CoolController: UIViewController
         view.addSubview(subview1)
         view.addSubview(subview2)
         
+        subview1.text = "Hello 🌏🌎👻!"
+        subview2.text = "CoolViewCells rock! 🍾🎉"
+        
         subview1.backgroundColor = UIColor.purple
         subview2.backgroundColor = UIColor.orange
     }
