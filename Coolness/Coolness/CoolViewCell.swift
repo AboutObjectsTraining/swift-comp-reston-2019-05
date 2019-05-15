@@ -70,15 +70,15 @@ extension CoolViewCell
     }
     
     fileprivate func animateFinalBounce(duration: TimeInterval) {
-        UIView.animate(withDuration: duration) {
-            self.transform = .identity
+        UIView.animate(withDuration: duration) { [weak self] in
+            self?.transform = .identity
         }
     }
     
     private func animateBounce(duration: TimeInterval, size: CGSize) {
         UIView.animate(withDuration: duration,
-                       animations: { self.configureBounce(size: size) },
-                       completion: { _ in self.animateFinalBounce(duration: duration) })
+                       animations: { [weak self] in self?.configureBounce(size: size) },
+                       completion: { [weak self] _ in self?.animateFinalBounce(duration: duration) })
     }
 }
 
