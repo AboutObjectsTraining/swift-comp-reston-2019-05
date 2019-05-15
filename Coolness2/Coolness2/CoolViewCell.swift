@@ -17,13 +17,19 @@ extension UIEdgeInsets
     var height: CGFloat { return top + bottom }
 }
 
+@IBDesignable
 class CoolViewCell: UIView
 {
     var highlighted = false {
         didSet { alpha = highlighted ? 0.5 : 1.0 }
     }
     
-    var text: String? {
+    @IBInspectable var cornerRadius: CGFloat {
+        get { return layer.cornerRadius }
+        set { layer.cornerRadius = newValue }
+    }
+    
+    @IBInspectable var text: String? {
         didSet { sizeToFit() }
     }
     
@@ -34,8 +40,13 @@ class CoolViewCell: UIView
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // FIXME: Don't crash
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        configureLayer()
+        configureGestureRecognizers()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        layer.masksToBounds = true
     }
     
     private func configureGestureRecognizers() {
