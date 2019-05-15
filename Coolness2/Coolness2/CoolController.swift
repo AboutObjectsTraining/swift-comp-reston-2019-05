@@ -16,8 +16,8 @@ class CoolController: UIViewController
 {
     static let coolFieldNib = UINib(nibName: "CoolField", bundle: nil)
     
-    var contentView: UIView!
-    var textField: UITextField!
+    @IBOutlet var contentView: UIView!
+    @IBOutlet var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,11 @@ class CoolController: UIViewController
                 let field = topLevelObjs.first
                 else { fatalError("CoolField nib doesn't contain a textfield") }
             view.addSubview(field)
-            field.frame.origin.y = CGFloat(index * 60)
+            field.frame = field.frame.offsetBy(dx: 20, dy: CGFloat(index * 60))
         }
     }
     
-    @objc func addCell() {
+    @IBAction func addCell() {
         print("In \(#function)")
         let newCell = CoolViewCell()
         newCell.text = textField.text
