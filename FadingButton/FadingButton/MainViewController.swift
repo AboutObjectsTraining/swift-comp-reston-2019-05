@@ -16,8 +16,7 @@ class MainViewController: UIViewController {
         UIView.animateKeyframes(withDuration: 1.25,
                                 delay: 0,
                                 options: [.repeat, .autoreverse],
-                                animations: { self.configureFadeAnimation() },
-                                completion: {_ in })
+                                animations: { self.configureFadeAnimation() })
     }
     
     func configureFadeAnimation() {

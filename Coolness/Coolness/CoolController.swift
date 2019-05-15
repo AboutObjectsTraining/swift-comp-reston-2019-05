@@ -3,6 +3,15 @@
 
 import UIKit
 
+extension CoolController: UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("In \(#function)")
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
 class CoolController: UIViewController
 {
     var contentView: UIView!
@@ -35,6 +44,8 @@ class CoolController: UIViewController
         accessoryView.addSubview(textField)
         textField.borderStyle = .roundedRect
         textField.placeholder = "Enter a label"
+        
+        textField.delegate = self
         
         let button = UIButton(type: .system)
         accessoryView.addSubview(button)
