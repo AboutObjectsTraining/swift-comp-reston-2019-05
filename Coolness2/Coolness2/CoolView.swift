@@ -6,14 +6,25 @@ import UIKit
 class CoolView: UIView
 {
     @IBOutlet var textField: UITextField!
+    @IBOutlet var contentView: UIView!
     
     @IBAction func addCell() {
         print("In \(#function)")
         let newCell = CoolViewCell()
         newCell.text = textField.text
-        addSubview(newCell)
+        contentView.addSubview(newCell)
     }
 }
+
+extension CoolView: UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("In \(#function)")
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
 
 
 

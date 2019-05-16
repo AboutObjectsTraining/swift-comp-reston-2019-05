@@ -19,6 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+//extension AppDelegate
+//{
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        guard let touch = touches.first, let touchedView = touch.view else { return }
+//        
+//        let currLocation = touch.location(in: nil)
+//        let prevLocation = touch.previousLocation(in: nil)
+//        
+//        touchedView.center.x += currLocation.x - prevLocation.x
+//        touchedView.center.y += currLocation.y - prevLocation.y
+//    }
+//    
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { }
+//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) { }
+//}
+
 extension AppDelegate
 {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
