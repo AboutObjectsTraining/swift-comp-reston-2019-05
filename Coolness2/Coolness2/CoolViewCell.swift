@@ -111,7 +111,6 @@ extension CoolViewCell
     }
 }
 
-
 // MARK: - UIResponder methods
 
 extension CoolViewCell
@@ -119,6 +118,7 @@ extension CoolViewCell
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         superview?.bringSubviewToFront(self)
         highlighted = true
+        print("In \(CoolViewCell.self), \(#function)")
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {

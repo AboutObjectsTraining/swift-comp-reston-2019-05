@@ -14,6 +14,8 @@
 		B4146DF6228C6BCE0036DFB7 /* CoolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4146DF3228C6BCE0036DFB7 /* CoolViewCell.swift */; };
 		B4146DF8228C6E2A0036DFB7 /* CoolStuff.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4146DF7228C6E2A0036DFB7 /* CoolStuff.xib */; };
 		B4146DFA228C7E8A0036DFB7 /* CoolField.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4146DF9228C7E8A0036DFB7 /* CoolField.xib */; };
+		B4146DFC228CBD280036DFB7 /* CoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4146DFB228CBD280036DFB7 /* CoolView.swift */; };
+		B4146DFE228CC1BC0036DFB7 /* AccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4146DFD228CC1BC0036DFB7 /* AccessoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B4146DF3228C6BCE0036DFB7 /* CoolViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolViewCell.swift; sourceTree = "<group>"; };
 		B4146DF7228C6E2A0036DFB7 /* CoolStuff.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolStuff.xib; sourceTree = "<group>"; };
 		B4146DF9228C7E8A0036DFB7 /* CoolField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolField.xib; sourceTree = "<group>"; };
+		B4146DFB228CBD280036DFB7 /* CoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolView.swift; sourceTree = "<group>"; };
+		B4146DFD228CC1BC0036DFB7 /* AccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 			children = (
 				B4146DF1228C6BCD0036DFB7 /* AppDelegate.swift */,
 				B4146DF2228C6BCE0036DFB7 /* CoolController.swift */,
+				B4146DF3228C6BCE0036DFB7 /* CoolViewCell.swift */,
+				B4146DFB228CBD280036DFB7 /* CoolView.swift */,
+				B4146DFD228CC1BC0036DFB7 /* AccessoryView.swift */,
 				B4146DF7228C6E2A0036DFB7 /* CoolStuff.xib */,
 				B4146DF9228C7E8A0036DFB7 /* CoolField.xib */,
-				B4146DF3228C6BCE0036DFB7 /* CoolViewCell.swift */,
 				B4146DE0228C6A9B0036DFB7 /* Assets.xcassets */,
 				B4146DE2228C6A9B0036DFB7 /* LaunchScreen.storyboard */,
 				B4146DE5228C6A9B0036DFB7 /* Info.plist */,
@@ -144,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4146DF5228C6BCE0036DFB7 /* CoolController.swift in Sources */,
+				B4146DFE228CC1BC0036DFB7 /* AccessoryView.swift in Sources */,
+				B4146DFC228CBD280036DFB7 /* CoolView.swift in Sources */,
 				B4146DF4228C6BCE0036DFB7 /* AppDelegate.swift in Sources */,
 				B4146DF6228C6BCE0036DFB7 /* CoolViewCell.swift in Sources */,
 			);

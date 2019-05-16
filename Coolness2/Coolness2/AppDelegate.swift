@@ -19,3 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AppDelegate
+{
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("In \(AppDelegate.self), \(#function)")
+        UIApplication.shared.sendAction(#selector(resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}

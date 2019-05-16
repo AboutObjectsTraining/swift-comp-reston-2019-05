@@ -12,8 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoolController" customModule="Coolness2" customModuleProvider="target">
             <connections>
-                <outlet property="contentView" destination="LlR-Xy-kah" id="ZbE-7Z-Vts"/>
-                <outlet property="textField" destination="D3d-gd-sIF" id="IqV-cs-HeD"/>
                 <outlet property="view" destination="bxW-cX-mSR" id="gOz-EL-jZK"/>
             </connections>
         </placeholder>
@@ -22,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbP-OJ-w4j" userLabel="Accessory View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbP-OJ-w4j" userLabel="Accessory View" customClass="AccessoryView" customModule="Coolness2" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a label" textAlignment="natural" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-gd-sIF">
@@ -34,7 +32,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <outlet property="delegate" destination="-1" id="mHw-i7-pOr"/>
+                                <outlet property="delegate" destination="fbP-OJ-w4j" id="wHF-B3-5DZ"/>
                             </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS1-2v-fol">
@@ -45,7 +43,7 @@
                             </constraints>
                             <state key="normal" title="Add"/>
                             <connections>
-                                <action selector="addCell" destination="-1" eventType="touchUpInside" id="cPt-dk-eMZ"/>
+                                <action selector="addCell" destination="LlR-Xy-kah" eventType="touchUpInside" id="gic-JC-ATk"/>
                             </connections>
                         </button>
                     </subviews>
@@ -57,7 +55,7 @@
                         <constraint firstAttribute="height" constant="128" id="aZh-gA-NOx"/>
                     </constraints>
                 </view>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlR-Xy-kah" userLabel="Content View">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlR-Xy-kah" userLabel="Content View" customClass="CoolView" customModule="Coolness2" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="128" width="375" height="684"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMb-9k-Ske" userLabel="Cool Cell" customClass="CoolViewCell" customModule="Coolness2" customModuleProvider="target">
@@ -81,6 +79,9 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="textField" destination="D3d-gd-sIF" id="hFK-6r-kKw"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
