@@ -1,0 +1,15 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+}
+
+body {
+    margin-left: 36px;
+    margin-right: 36px;
+    line-height: 48px;
+}
+
+ul li {
+    padding-bottom: 6px;
+}
+

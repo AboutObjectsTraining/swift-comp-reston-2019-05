@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y8q-2G-YQs">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="naG-8F-FZE">
+            <objects>
+                <tabBarController id="Y8q-2G-YQs" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aBg-xe-xr7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oCe-Q5-V4e" kind="relationship" relationship="viewControllers" id="sp4-Kc-dji"/>
+                        <segue destination="8KJ-3E-t4w" kind="relationship" relationship="viewControllers" id="4Ki-He-wGR"/>
+                        <segue destination="YwW-dy-JZg" kind="relationship" relationship="viewControllers" id="geh-yn-3Ac"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evJ-IV-IRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="-291"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="2dN-2e-ohX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Library" id="8KJ-3E-t4w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Saved Books" image="Library-Solid" id="DXB-7w-9ud"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWm-vW-5OY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="-290"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="eG4-zo-JRp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="oCe-Q5-V4e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="iTunes Search" image="Search" id="WhO-RN-2Sc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsN-5o-Xjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="-357"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Np9-XE-4hF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="YwW-dy-JZg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings-Solid" id="2rl-rx-KUZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN5-te-l25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="-221"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Library-Solid" width="22" height="22"/>
+        <image name="Search" width="21" height="20"/>
+        <image name="Settings-Solid" width="20" height="20"/>
+    </resources>
+</document>

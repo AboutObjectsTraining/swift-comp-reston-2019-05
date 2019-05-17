@@ -1,0 +1,106 @@
+[
+  {
+    "artistId" : 388429243,
+    "books" : [
+      {
+        "description" : "iOS 11 App Development Essentials, the latest edition of this popular book series, has now been fully updated for the iOS 11 SDK, Xcode 9 and the Swift 4 programming language. \r\n<br \/><br \/>\r\nBeginning with the basics, this book provides an outline of the steps necessary to set up an iOS development environment. An introduction to the architecture of iOS 11 and programming in Swift 4 is provided, followed by an in-depth look at the design of iOS applications and user interfaces.\r\n<br \/><br \/>\r\nMore advanced topics such as file handling, database management, graphics drawing and animation are also covered, as are touch screen handling, gesture recognition, multitasking, location management, local notifications, camera access and video playback support. Other features are also covered including Auto Layout, local map search, user interface animation using UIKit dynamics, Siri integration, iMessage app development, CloudKit sharing, biometric authentication, SpriteKit games development and audio to text transcription.\r\n<br \/><br \/>\r\nAdditional features of iOS development using Xcode are also covered, including Swift playgrounds, universal user interface design using size classes, app extensions, Interface Builder Live Views, embedded frameworks, collection and stack layouts and CloudKit data storage.\r\n<br \/><br \/>\r\nThe key new features of iOS 11 and Xcode 9 are also covered in detail, including Swift 4, drag and drop integration and the document browser.\r\n<br \/><br \/>\r\nThe aim of this book, therefore, is to teach you the skills necessary to build your own apps for iOS 11. Assuming you are ready to download the iOS 11 SDK and Xcode 9, have an Intel-based Mac and ideas for some apps to develop, you are ready to get started.",
+        "artworkUrl60" : "https:\/\/is4-ssl.mzstatic.com\/image\/thumb\/Publication118\/v4\/0d\/b3\/ee\/0db3ee4b-860b-2a5f-d8d5-5e9c1b1a36d2\/source\/60x60bb.jpg",
+        "releaseDate" : "2018-02-22T08:00:00Z",
+        "fileSizeBytes" : 65409618,
+        "trackId" : 1351977757,
+        "formattedPrice" : "$35.99",
+        "price" : 35.990000000000002,
+        "trackName" : "iOS 11 App Development Essentials",
+        "genreIds" : [
+          "10023",
+          "38",
+          "9027"
+        ],
+        "trackCensoredName" : "iOS 11 App Development Essentials",
+        "artistId" : 388429243,
+        "genres" : [
+          "Programming",
+          "Books",
+          "Computers & Internet"
+        ],
+        "kind" : "ebook",
+        "currency" : "USD",
+        "trackViewUrl" : "https:\/\/itunes.apple.com\/us\/book\/ios-11-app-development-essentials\/id1351977757?mt=11&uo=4",
+        "artworkUrl100" : "https:\/\/is4-ssl.mzstatic.com\/image\/thumb\/Publication118\/v4\/0d\/b3\/ee\/0db3ee4b-860b-2a5f-d8d5-5e9c1b1a36d2\/source\/100x100bb.jpg"
+      },
+      {
+        "description" : "iOS 9 App Development Essentials is latest edition of this popular book series and has now been fully updated for the iOS 9 SDK, Xcode 7 and the Swift 2 programming language.<br \/>\nBeginning with the basics, this book provides an outline of the steps necessary to set up an iOS development environment. An introduction to the architecture of iOS 9 and programming in Swift is provided, followed by an in-depth look at the design of iOS applications and user interfaces. More advanced topics such as file handling, database management, in-app purchases, graphics drawing and animation are also covered, as are touch screen handling, gesture recognition, multitasking, iAds integration, location management, local notifications, camera access and video and audio playback support. Other features are also covered including Auto Layout, Twitter and Facebook integration, App Store hosted in-app purchase content, Sprite Kit-based game development, local map search and user interface animation using UIKit dynamics.<br \/>\nAdditional features of iOS development using Xcode 7 are also covered, including Swift playgrounds, universal user interface design using size classes, app extensions, Interface Builder Live Views, embedded frameworks, CloudKit data storage and TouchID authentication.<br \/>\nThe key new features of iOS 9 and Xcode 7 are also covered in detail, including new error handling in Swift 2, designing Stack View based user interfaces, multiple storyboard support, iPad multitasking, map flyover support, 3D Touch and Picture-in-Picture media playback.<br \/>\nThe aim of this book, therefore, is to teach you the skills necessary to build your own apps for iOS 9. Assuming you are ready to download the iOS 9 SDK and Xcode 7, have an Intel-based Mac and ideas for some apps to develop, you are ready to get started.",
+        "artworkUrl60" : "https:\/\/is4-ssl.mzstatic.com\/image\/thumb\/Publication6\/v4\/32\/1d\/fd\/321dfd9e-1258-b4a5-2fe7-5bc528b32eb4\/source\/60x60bb.jpg",
+        "releaseDate" : "2015-10-14T07:00:00Z",
+        "fileSizeBytes" : 30233429,
+        "trackId" : 1049861077,
+        "averageUserRating" : 4,
+        "formattedPrice" : "$14.99",
+        "price" : 14.99,
+        "trackName" : "iOS 9 App Development Essentials",
+        "genreIds" : [
+          "10023",
+          "38",
+          "9027"
+        ],
+        "trackCensoredName" : "iOS 9 App Development Essentials",
+        "artistId" : 388429243,
+        "userRatingCount" : 6,
+        "genres" : [
+          "Programming",
+          "Books",
+          "Computers & Internet"
+        ],
+        "kind" : "ebook",
+        "currency" : "USD",
+        "trackViewUrl" : "https:\/\/itunes.apple.com\/us\/book\/ios-9-app-development-essentials\/id1049861077?mt=11&uo=4",
+        "artworkUrl100" : "https:\/\/is4-ssl.mzstatic.com\/image\/thumb\/Publication6\/v4\/32\/1d\/fd\/321dfd9e-1258-b4a5-2fe7-5bc528b32eb4\/source\/100x100bb.jpg"
+      }
+    ],
+    "artistIds" : [
+      388429243
+    ],
+    "artistName" : "Neil Smyth",
+    "artistViewUrl" : "https:\/\/itunes.apple.com\/us\/artist\/neil-smyth\/388429243?mt=11&uo=4"
+  },
+  {
+    "artistId" : 462228591,
+    "books" : [
+      {
+        "description" : "<b>Learn how to solve blocking user experience and build event based reactive applications with Swift.<\/b><br \/><br \/>Key Features<br \/>Build fast and scalable apps with RxSwiftApply reactive programming to solve complex problems and build efficient programs with reactive user interfacesTake expressiveness, scalability, and maintainability of your Swift code to the next level with this practical guide<br \/>Book Description<br \/><br \/>RxSwift belongs to a large family of Rx implementations in different programming languages that share almost identical syntax and semantics. Reactive approach will help you to write clean, cohesive, resilient, scalable, and maintainable code with highly configurable behavior.<br \/><br \/>This book will introduce you to the world of reactive programming, primarily focusing on mobile platforms. It will tell how you can benefit from using RxSwift in your projects, existing or new. Further on, the book will demonstrate the unbelievable ease of configuring asynchronous behavior and other aspects of the app that are traditionally considered to be hard to implement and maintain. It will explain what Rx is made of, and how to switch to reactive way of thinking to get the most out of it. Also, test production code using RxTest and the red\/ green approach. Finally, the book will dive into real-world recipes and show you how to build a real-world app by applying the reactive paradigm.<br \/><br \/>By the end of the book, you’ll be able to build a reactive swift application by leveraging all the concepts this book takes you through.<br \/><br \/>What you will learn<br \/>Understand the practical benefits of Rx on a mobile platformExplore the building blocks of Rx, and Rx data flows with marble diagramsLearn how to convert an existing code base into RxSwift code baseLearn how to debug and test your Rx CodeWork with Playgrounds to transform sequences by filtering them using map, flatmap and other operatorsLearn how to combine different operators to work with Events in a more controlled manner.Discover RxCocoa and convert your simple UI elements to Reactive componentsBuild a complete RxSwift app using MVVM as design pattern<br \/>Who this book is for<br \/><br \/>This book is for the developers who are familiar with Swift and iOS application development and are looking out to reduce the complexity of their apps. Prior experience of reactive programming is not necessary.",
+        "artworkUrl60" : "https:\/\/is5-ssl.mzstatic.com\/image\/thumb\/Publication118\/v4\/86\/b7\/c0\/86b7c0d4-29b6-b354-1eb9-861099d29a79\/source\/60x60bb.jpg",
+        "releaseDate" : "2018-02-27T08:00:00Z",
+        "fileSizeBytes" : 10369243,
+        "trackId" : 1355498683,
+        "formattedPrice" : "$35.99",
+        "price" : 35.990000000000002,
+        "trackName" : "Reactive Programming with Swift 4",
+        "genreIds" : [
+          "10022",
+          "38",
+          "9027",
+          "10017",
+          "10023"
+        ],
+        "trackCensoredName" : "Reactive Programming with Swift 4",
+        "artistId" : 462228591,
+        "genres" : [
+          "Operating Systems",
+          "Books",
+          "Computers & Internet",
+          "Computers",
+          "Programming"
+        ],
+        "kind" : "ebook",
+        "currency" : "USD",
+        "trackViewUrl" : "https:\/\/itunes.apple.com\/us\/book\/reactive-programming-with-swift-4\/id1355498683?mt=11&uo=4",
+        "artworkUrl100" : "https:\/\/is5-ssl.mzstatic.com\/image\/thumb\/Publication118\/v4\/86\/b7\/c0\/86b7c0d4-29b6-b354-1eb9-861099d29a79\/source\/100x100bb.jpg"
+      }
+    ],
+    "artistIds" : [
+      462228591
+    ],
+    "artistName" : "Navdeep Singh",
+    "artistViewUrl" : "https:\/\/itunes.apple.com\/us\/artist\/navdeep-singh\/462228591?mt=11&uo=4"
+  }
+]

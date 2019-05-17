@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1">
+    <entity name="Author" representedClassName=".Author" syncable="YES" codeGenerationType="class">
+        <attribute name="iTunesId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Book" inverseName="author" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName=".Book" syncable="YES" codeGenerationType="class">
+        <attribute name="iTunesId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="books" inverseEntity="Author" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="-306" positionY="-27" width="128" height="105"/>
+        <element name="Book" positionX="-54" positionY="18" width="128" height="120"/>
+    </elements>
+</model>

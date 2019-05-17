@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="authorId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="jsonKeyPath" value="artistId"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES">
+            <userInfo>
+                <entry key="jsonKeyPath" value="artistName"/>
+            </userInfo>
+        </attribute>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Book" inverseName="author" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="bookId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="jsonKeyPath" value="trackId"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="jsonKeyPath" value="trackName"/>
+            </userInfo>
+        </attribute>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="books" inverseEntity="Author" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="-230.140625" positionY="-383.23046875" width="128" height="30"/>
+        <element name="Book" positionX="-110.05078125" positionY="-205.95703125" width="128" height="30"/>
+    </elements>
+</model>
