@@ -2,15 +2,28 @@
 // See LICENSE.txt for this project's licensing information.
 
 import UIKit
+import ReadingListModel
 
 class ReadingListController: UITableViewController
 {
+    @IBOutlet var dataSource: ReadingListDataSource!
+    
     @IBAction func done(unwindSegue: UIStoryboardSegue) {
-        // TODO: sync the UI and save changes
+        dataSource.save()
+        tableView.reloadData()
     }
     
     @IBAction func cancel(unwindSegue: UIStoryboardSegue) {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.realDestination as? BookDetailController,
+            let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("destination must be \(BookDetailController.self)")
+        }
+        
+        controller.book = dataSource.book(at: indexPath)
     }
 }
 
