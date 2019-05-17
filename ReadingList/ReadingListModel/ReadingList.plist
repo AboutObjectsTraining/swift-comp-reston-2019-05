@@ -1,0 +1,153 @@
+//
+// Copyright (C) 2017 About Objects, Inc. All Rights Reserved.
+// See LICENSE.txt for this example's licensing information.
+//
+{
+    title = "My Summer Reading";
+    books = (
+	{
+		author = {
+			firstName = Ernest;
+			lastName = Hemingway;
+		};
+		title = "For Whom the Bell Tolls";
+		year = 1951;
+	},
+	{
+		author = {
+			firstName = "H. G.";
+			lastName = Wells;
+		};
+		title = "War of the Worlds";
+		year = 1898;
+	},
+	{
+		author = {
+			firstName = "H. G.";
+			lastName = Wells;
+		};
+		title = "The Time Machine";
+		year = 1897;
+	},
+	{
+		author = {
+			firstName = Lewis;
+			lastName = Carroll;
+		};
+		title = "Alice in Wonderland";
+		year = 1865;
+	},
+	{
+		author = {
+			firstName = "Ralph Waldo";
+			lastName = Emerson;
+		};
+		title = "Nature";
+		year = 1836;
+	},
+	{
+		author = {
+			firstName = William;
+			lastName = Shakespeare;
+		};
+		title = Macbeth;
+		year = 1603;
+	},
+	{
+		author = {
+			firstName = "A. A.";
+			lastName = Milne;
+		};
+		title = "Winnie The Pooh";
+		year = 1926;
+	},
+	{
+		author = {
+			firstName = Mark;
+			lastName = Twain;
+		};
+		title = "Adventures Of Huckleberry Finn";
+		year = 1884;
+	},
+	{
+		author = {
+			firstName = Leo;
+			lastName = Tolstoy;
+		};
+		title = "War And Peace";
+		year = 1869;
+	},
+	{
+		author = {
+			firstName = Jane;
+			lastName = Austen;
+		};
+		title = "Sense And Sensibility";
+		year = 1811;
+	},
+	{
+		author = {
+			firstName = Jane;
+			lastName = Austen;
+		};
+		title = Emma;
+		year = 1816;
+	},
+	{
+		author = {
+			firstName = Fyodor;
+			lastName = Dostoevsky;
+		};
+		title = "The Brothers Karamozov";
+		year = 1880;
+	},
+	{
+		author = {
+			firstName = "Sir Isaac";
+			lastName = Newton;
+		};
+		title = Principia;
+		year = 1687;
+	},
+	{
+		title = "Leaves of Grass";
+		year = 1855;
+		author = {
+			firstName = Walt;
+			lastName = Whitman;
+		};
+	},
+	{
+		title = Utopia;
+		year = 1516;
+		author = {
+			firstName = "Sir Thomas";
+			lastName = More;
+		};
+	},
+	{
+		title = "Novum Organum";
+		year = 1620;
+		author = {
+			firstName = "Sir Francis";
+			lastName = Bacon;
+		};
+	},
+	{
+		title = "Henry V";
+		year = 1599;
+		author = {
+			firstName = William;
+			lastName = Shakespeare;
+		};
+	},
+	{
+		title = "The Mill on the Floss";
+		year = 1860;
+		author = {
+			firstName = George;
+			lastName = Eliot;
+		};
+	},
+    );
+}
