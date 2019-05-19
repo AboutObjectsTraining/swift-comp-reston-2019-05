@@ -1,17 +1,16 @@
 .DS_Store
 
 ## Xcode
-*.xcworkspace
+*.xcuserdata/
+*.xcuserdata/
+*.xcshareddatad/
 *.xcworkspacedata
 
 ## Build generated
 build/
 DerivedData/
 
-## Various settings
-xcuserdata/
-
-## Other
+## Emacs
 *~
 
 ## Obj-C/Swift specific
@@ -32,3 +31,4 @@ playground.xcworkspace
 .build/
 /SwiftProgramming/SwiftProgramming.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 /SwiftProgramming/SwiftProgramming.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+xcuserdata
